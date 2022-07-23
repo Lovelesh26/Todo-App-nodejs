@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const router = require('./routes');
 const app = express();
 
-
+app.use(express.json())
 mongoose.connect('mongodb+srv://love:MVfE6vwYHwWzRIJU@cluster0.paolat1.mongodb.net/?retryWrites=true&w=majority');
 const db = mongoose.connection;
   

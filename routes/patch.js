@@ -1,7 +1,7 @@
 const express = require('express');
 const router =    express.Router();
-const {postData}= require('../controllers')
+const {patchData}= require('../controllers')
 
-router.post('/data',postData.post)
+router.patch('/data/:loveid',patchData.patch)
 
 module.exports = router;

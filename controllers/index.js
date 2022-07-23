@@ -1,11 +1,13 @@
 
 const getData = require('./get')
 const postData = require('./post')
+const patchData = require('./patch')
 
 
  const  controller  = {
     getData,
-    postData
+    postData,
+    patchData
  }
 
 module.exports = controller;
